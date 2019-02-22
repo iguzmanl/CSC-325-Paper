@@ -1,0 +1,271 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
+                                                          % if you need a4paper
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
+                                                          % paper
+
+\IEEEoverridecommandlockouts                              % This command is only
+                                                          % needed if you want to
+                                                          % use the \thanks command
+\overrideIEEEmargins
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+
+
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+
+\title{\LARGE \bf
+Exploring Consequences of Privacy Violations via China's Social Credit System
+}
+
+%\author{ \parbox{3 in}{\centering Huibert Kwakernaak*
+%         \thanks{*Use the $\backslash$thanks command to put information here}\\
+%         Faculty of Electrical Engineering, Mathematics and Computer Science\\
+%         University of Twente\\
+%         7500 AE Enschede, The Netherlands\\
+%         {\tt\small h.kwakernaak@autsubmit.com}}
+%         \hspace*{ 0.5 in}
+%         \parbox{3 in}{ \centering Pradeep Misra**
+%         \thanks{**The footnote marks may be inserted manually}\\
+%        Department of Electrical Engineering \\
+%         Wright State University\\
+%         Dayton, OH 45435, USA\\
+%         {\tt\small pmisra@cs.wright.edu}}
+%}
+
+\author{Ivonne A. Guzman-Lemuz}% <-this % stops a space
+% \thanks{*This work was not supported by any organization}% <-this % stops a space
+% \thanks{$^{1}$H. Kwakernaak is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+%         University of Twente, 7500 AE Enschede, The Netherlands
+%         {\tt\small h.kwakernaak at papercept.net}}%
+% \thanks{$^{2}$P. Misra is with the Department of Electrical Engineering, Wright State University,
+%         Dayton, OH 45435, USA
+%         {\tt\small p.misra at ieee.org}}%
+% 
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+China’s social credit system aims to improve the quality of life for its citizens through establishing higher levels of trust via credit score. This paper will explore ethical and technical challenges in creating a system that will accomplish the aforementioned goals, while keeping the consequences of privacy violations in mind. The system positively favors deeds recorded in public, including monetary donations. However, the scoring system is also a ‘black box’ for the general public. The main ethical argument is that such a system fails to genuinely motivate others to act at a higher moral standard intrinsically. The main technical argument states that a country-wide method of video surveillance used to affect individual’s scores is technically infeasible due to low accuracy rates in facial recognition technology its existing algorithmic bias.
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUCTION}
+
+Our world is in a state where security breaches, corruption, and general loss of trust bombard our lives constantly. Being able to confidently trust another party has become more important than ever before. In order to ensure one’s trust is placed in the right hands, our society has various rating systems in place. China is currently in the process of implementing its own rating system for its citizens. It is known as China’s social credit system, the aim is to “provide the trustworthy with benefits and discipline the untrustworthy … [so that] integrity becomes a widespread social value”[1]. The Chinese government has the goal to fully roll out this program by 2020. Currently, this social credit system is in a pilot phase by having several local governments implement their own version of this system. The general rules for this system include each citizen starting off with one thousand points. Positive deeds such as donating to charity, paying bills on time, or helping your neighbor will increase one’s score. Negative acts such as smoking in a non-smoke zone, playing music too loud on the train, refusing military service, or spreading fake news (especially related to violence and terrorism) will lower one’s score. Scores are classified into different lettered ranks. If one’s score is too low, citizens are considered “untrustworthy” and may be declined certain services, employment opportunities, or the ability to have their children attend a preferred high school or college. There are currently two main methods of contributing to one’s social credit score. The first is the use of big data. Online purchases, debt, and social media are some information that is planned to be used in one’s social credit score. The other method is mass surveillance through security cameras in public spaces including stores, public transit, and the street. The goal is to use facial recognition to identify those who are committing deeds that would negatively affect one’s credit score. The score is planned to be available to the public, it’s currently used in banks, bus and train stations, and some social media such as WeChat. Do the benefits of China’s social credit system outweigh the cost of privacy violations for China’s constituents?
+
+
+% \section{PROBLEM STATEMENT}
+
+% \subsection{Selecting a Template (Heading 2)}
+
+% First, confirm that you have the correct template for your paper size. This template has been tailored for output on the US-letter paper size. Please do not use it for A4 paper since the margin requirements for A4 papers may be different from Letter paper size.
+
+% \subsection{Maintaining the Integrity of the Specifications}
+
+% The template is used to format your paper and style the text. All margins, column widths, line spaces, and text fonts are prescribed; please do not alter them. You may note peculiarities. For example, the head margin in this template measures proportionately more than is customary. This measurement and others are deliberate, using specifications that anticipate your paper as one part of the entire proceedings, and not as an independent document. Please do not revise any of the current designations
+
+\section{Social implications}
+Recently, we are seeing a decline in citizen’s trust in the government around the globe[2]. Due to tragedies previously mentioned alongside the rise of fake news, individuals have higher standards in order to prove trustworthiness. 
+
+Having trust in the government and with others is extremely vital for its survival. The Organisation for Economic Co-operation and Development states that better trust is important for economic activity and success of government policies and regulations[3].  There is strong incentive to start rebuilding trust between each other and our governments. However, like many privileges, trust must be earned. China’s new system will attempt to achieve this by enforcing social accountability, “an approach towards building accountability that relies on civic engagement, namely a situation whereby ordinary citizens and/or civil society organizations participate directly or indirectly in exacting accountability.”[4]. However, it is also important that systems of accountability take hierarchical structures of power into account. We must ensure that such systems are reliable, fair, and transparent for all participating.
+
+This particular topic is important to explore due to the lack of autonomy Chinese citizens have when it comes to what kind of privacy they will have to give up for this system. Other countries with similar authoritative governments will have the ability to implement this. China’s social credit system has huge potential implications for global society as a whole. It is important to make technical and ethical research and implement regulation now, before irreversible consequences occur.
+
+
+% \subsection{Abbreviations and Acronyms} Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Abbreviations such as IEEE, SI, MKS, CGS, sc, dc, and rms do not have to be defined. Do not use abbreviations in the title or heads unless they are unavoidable.
+
+% \subsection{Units}
+
+% \begin{itemize}
+
+% \item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as Ò3.5-inch disk driveÓ.
+% \item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
+% \item Do not mix complete spellings and abbreviations of units: ÒWb/m2Ó or Òwebers per square meterÓ, not Òwebers/m2Ó.  Spell out units when they appear in text: Ò. . . a few henriesÓ, not Ò. . . a few HÓ.
+% \item Use a zero before decimal points: Ò0.25Ó, not Ò.25Ó. Use Òcm3Ó, not ÒccÓ. (bullet list)
+
+% \end{itemize}
+
+
+\section{RELATED WORK}
+We will be exploring case studies and arguments that are either in support and opposition of compromising privacy for societal benefit, in this case safety and morality will be explored as they are large indicators for establishing trust. 
+\subsection{China's Perception of Privacy}
+One important observation to make is China’s approach to privacy compared to the United States. The Chinese government’s National Resource service platform for technical standards has their most recent version on personal information protection national standards on their website [5]. A key distinction between China’s policies and the United States is the level of focus on individual privacy. China’s national standards policies mainly focuses on data protection: how personal data is collected, stored, and shared. However, the policy lacks addressing personal privacy. China appears to focus more on protection via data security, and this framework is heavily represented when observing its government. China’s president Xi Jinping mentioned in his speech at the Chinese National Cybersecurity and Informization Work Conference in 2018, “without cybersecurity, there is no national security, the economy and society will not operate in a stable manner.., We must establish a correct cybersecurity view; strengthen cybersecurity protection of information infrastructure.”[6].
+
+A possible reason for China’s approach to privacy is its strong cultural ties to community and family. Their history of feudal society and long-lasting traditions values the sacrifice of an individual's freedom (or in this case, privacy) for the benefit of the collective group. The strong influence of China’s values paired with late participation (privacy only became a popular topic for academics and the media in China starting in the 1980s [7]) puts us in a position to better understand why the social credit system is seen as ethical, as it hopes to benefit the greater population. This approach to privacy differs greatly from the United States, as we emphasis more on individualism and freedom of expression.
+
+\subsection{Effects of Video Surveillance}
+
+Video surveillance has been a technology implemented around the world, London demonstrates extreme sophistication by having large networks of linked cameras. It is difficult to claim whether mass surveillance via security cameras improve safety or moral character of individuals. One case study in Englewood, one of Chicago’s most dangerous neighborhoods saw a decline in shootings by 52 percent after implementing linked video surveillance around the neighborhood [8]. Other parties, such as the ACLU claim that such methods of mass surveillance cause a chilling effect and have the potential to disproportionately impact minorities in protected classes [9]. It is important to note that other external factors may also contribute to safety or chilling effects such as improved lighting or more security officers.
+\subsection{Effects of social ratings on individuals}
+Now that we have taken a look at China’s view on privacy, arguments for / against video surveillance, we will explore the effects of social rating technologies on individuals. One of the most popular platforms where we rate a more so social interaction (car ride) is through ride share service such as Uber or Lyft. Currently, the average rating for an uber driver is around 4.8  [10] and if a driver’s rating is 4.6 or lower, then the company will notify the driver in order to improve and eventually deactivate their account if no improvement is made [11].  The average score for an uber driver was not always this high. Reputation inflation may be the reason why [12]. This topic is explored in a paper where it is argued that peer-to-peer platforms are susceptible to such inflation because rating and being rated poorly is uncomfortable. Public and private feedback on others were recorded and saw that average scores increased with public feedback while private feedback was more genuine. This not only affects the rater, but the one being rated. Ratings aren’t hidden from Uber drivers, so it is highly incentivized that both the driver and the passenger be held to a social standard (achieving this perhaps through disingenuous social interaction)in order to receive an extremely high rating, reflecting the same behavior from the studies previously mentioned.
+
+% \subsection{Headings, etc}
+
+% Text heads organize the topics on a relational, hierarchical basis. For example, the paper title is the primary text head because all subsequent material relates and elaborates on this one topic. If there are two or more sub-topics, the next level head (uppercase Roman numerals) should be used and, conversely, if there are not at least two sub-topics, then no subheads should be introduced. Styles named ÒHeading 1Ó, ÒHeading 2Ó, ÒHeading 3Ó, and ÒHeading 4Ó are prescribed.
+
+% \subsection{Figures and Tables}
+
+% Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use the abbreviation ÒFig. 1Ó, even at the beginning of a sentence.
+
+% \begin{table}[h]
+% \caption{An Example of a Table}
+% \label{table_example}
+% \begin{center}
+% \begin{tabular}{|c||c|}
+% \hline
+% One & Two\\
+% \hline
+% Three & Four\\
+% \hline
+% \end{tabular}
+% \end{center}
+% \end{table}
+
+
+%   \begin{figure}[thpb]
+%       \centering
+%       \framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
+% }}
+%       %\includegraphics[scale=1.0]{figurefile}
+%       \caption{Inductance of oscillation winding on amorphous
+%       magnetic core versus DC bias magnetic field}
+%       \label{figurelabel}
+%   \end{figure}
+   
+
+% Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity ÒMagnetizationÓ, or ÒMagnetization, MÓ, not just ÒMÓ. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write ÒMagnetization (A/m)Ó or ÒMagnetization {A[m(1)]}Ó, not just ÒA/mÓ. Do not label axes with a ratio of quantities and units. For example, write ÒTemperature (K)Ó, not ÒTemperature/K.Ó
+\section{ETHICAL ANALYSIS}
+There is a lot of nuance in the question we are exploring, and the current lack of structure specific implementation details within the social credit system makes it difficult to evaluate whether this system has any potential benefit, but I believe that the scoring system and use of surveillance cameras will only harm society as a whole. Below I will list the flaws in the system, and how it would be possible to mitigate them.
+\subsection{Lack of Transparency}
+
+The first troubling issue is that as of now, the credit system won’t tell individuals what they can do correctly [13]. With a system that can deeply affect one’s level of opportunity, it would be helpful to have set rules that is transparent to the public, in order to ensure that individuals aren’t being mysteriously punished. However the lack of regulation and inability for those who aren’t power to fight against this system makes it very controlling. The lack of privacy that the social credit system brings will make if very difficult for those who want to protest the system. This brings large risks in stifling social equality and policy change. Protesting against the government could decrease someone’s score, and potentially result in them unable to access something vital such as transport or premium healthcare. This brings up the ethical question of who gets to decide what is a good deed and a bad deed?
+\subsection{Perception of Social Credit System in Rongcheng}
+
+However, as previously mentioned, the social credit system may be helpful in lowering crime and opportunity disparity. In one of the pilot programs in a village named Dong Huo Tang Zhai  in Rongcheng, residents claim to be very satisfied with the effects of the social credit system [14]. The information collector, Zhou Aini observes that there used to be a lot of tension between neighbors in the village, but now everyone is very kind  to one another and fights are rare. The improvement in behavior and community is attributed back to the concept of social accountability. Fights lowers one’s score, so there is a bigger incentive to approach disagreements through friendly discussion rather than aggression. This has the potential to foster stronger emotional intelligence and safety, making it a very strong argument in favor of the social credit system. Additionally, a resident in Rongcheng believes that the social credit system can help the moral values of his community. He says, “It disciplines those who cannot discipline themselves”.
+\subsection{Potential benefit to Social Credit Score}
+
+When it comes to lowering opportunity disparity,  having a high score may make one eligible for better loans, special discounts, etc. It can be argued that it has the potential to bridge the divide in opportunity for people of all income levels. Having a low credit score, only reflecting financial information can be one-sided, as individuals can go into debt or file bankruptcy for a variety of situations. The social credit system and surveillance method offer a solution in these cases. If monitoring observes one as an obedient, and a “trustworthy” person, one may be able to get a loan regardless of financial status. This gives the ability to make companies evaluate individuals holistically. This concept applies to other bureaucratic situations. H	however, the impact of social deeds versus financial information all depends on how much weight social deeds affect your score compared to purchases, debt, etc. These values are not yet finalized, and not available to the general public.
+
+\subsection{Ethical Implication of releasing social credit score}
+
+As we have already mentioned, low scores in China’s social credit system can have consequences ranging from mild inconveniences up to difficult hurdles in order to maintain a dignified quality of life. Denying resources and service is an effective form of punishment, especially when considering China’s use of shame in order to maintain a sense of personal identity [15]. It is questionable whether publicly sharing sensitive information and the use of shaming through social credit scores is ethical. Recently this year, China incorporated their social credit system to a new tool on social media platform, WeChat [16]. The feature includes a map pinpointing location of those who have failed to pay their debts within a 500 meter radius. Tapping on an individual marked on the map reveals a lot of personal information including full name, court case number, ID card, reasons for being labelled untrustworthy, and some home address information. Most of the information released are unique identifiers and some quasi-identifiers. This is intentional, as the goal of the program is to "to enforce [the court’s] rulings and create a socially credible environment". Sharing social credit score, or specific details that influence social credit score (debt in this case) has the ability to allow anyone to make inferences. This form of privacy violation and shaming based on solely financial information contradicts the claim of the social credit system lowering opportunity disparity.  There’s different reasons individuals go into debt, the poor not making a living wage will struggle with this system immensely and be punished furthermore. 
+\subsection{Altering motivations}
+
+My final ethical criticism is that I do not believe that this system will improve morality of its citizens. By relying heavily on a numerical social credit score, motivations are moved away from virtue and towards pure external motivations. Such a program only prevents individuals to choose their ethics, and forces them to perform whatever will bring them reward.
+\section{TECHNICAL ANALYSIS}
+There are several concerns that the social credit presents: lack of transparency, perpetuating inequality, and moral ineffectiveness. In this section we will explore technical facets of this system and conclude whether it is possible to address the concerns listed. Additionally, we will decide whether the system has the ability to scale.
+\subsection{China's Current use of Mass Surveillance}
+
+It is important to note that in 2018, China already had 170 million security in use for the sophisticated surveillance system, with at least 400 more cameras planned to be integrated within the upcoming years[17].  Delivering fines are also features in some large cities. For example, over than 300 pedestrians who ignore red lights at crossings in downtown Shanghai have been recognized through face tracking technology and delivered a fine. Those who have yet to pay their fine have their pictures displayed on a screen downtown [18]. It is claimed that someone’s face is matched to their photo ID, which leads to discovering the rest of someone’s sensitive information such as full name, ID number, address, and phone number. It is clear that China has made technical advances where such system works most of the time in designated cities and villages.
+\subsection{Issues with Scaling}
+
+One concern is whether China will be able to implement connected security cameras throughout the country, monitoring its 1.4 billion population. Megvil Face++ is a platform that various police departments in China use to detect and arrest individuals. The vice president of Megvil states that their technology is not capable of performing the level of surveillance and detection that is required for country-wide use [19]. The system has several limitations: accuracy and capacity. The algorithm used by a Face++ linked camera has an accuracy of around 97 percent, which may be permissible for smaller scale projects. However, this can present other flaws in the system, especially when analyzing its use throughout the whole country, which we will get into later. The vice president of Megvil additionally states that it wouldn’t be feasible for the system to search for more than 1,000 faces at a time in the first place, and it also isn’t feasible for the system to run every day for 24 hours presently.
+\subsection{Issues with Facial Recognition Accuracy}
+
+One of the biggest concerns for citizens would be the accuracy of such surveillance cameras. Especially since being deducted points on a social credit score can lead to serious consequences, users would not want their rights and privileges compromised by technological errors. Currently, there is no promising accuracy rate for surveillance cameras used country wide. Isvision is the company that has a contract with China to develop the 1.3 billion person facial recognition system. In 2018, the algorithm was tested and provided unsatisfactory results, accuracy of a photo matching a face was below 60percent and the top 20 matches had an accuracy below 70 percent [20]. Such issues may be due to the extremely demanding speed and accuracy requirements. It is reported that the system is required to find a match within three seconds with an accuracy higher than 88 percent. When dealing with a database of at least 1.3 billion citizen photographs, meeting such demands appears to be very difficult in our current technological state.
+\subsection{Algorithm Bias in Facial Recognition}
+
+Aside from low accuracy rates, there is room for algorithmic bias interfering with such facial recognition technologies, potentially harming specific groups more than others. Facial recognition algorithms developed by Microsoft and IBM fail to identify the gender of black women , while white men have an accuracy rate of over 90 percent [21]. These issues stem from the lack of representative datasets, but these mistakes and biases based on race are also technological setbacks that the Chinese social credit system faces. This presents the highest threat to Uyghurs, a Muslim ethnic minority that has been historically been targeted by the Chinese government. There is a higher density of surveillance cameras with facial recognition technology in areas with high populations of Uyghurs [22]. According to several interviews, those who are flagged and detained are often gone without trial [23]. Automated flagging systems paired with selective bias towards minority groups enables officials to arbitrarily arrest individuals, especially since they do not have access to how the system works. Currently, there is no reported protocol on how the government handles facial recognition errors or how an individual can appeal for their drop in score due to false reporting.
+\subsection{Issues with developing an equitable system}
+
+The discussion of such technology perpetuating opportunity disparity can be expanded when analyzing the disadvantages of vulnerable populations. Donating money or blood is an immediate way to win back points, this process to redeem oneself highly favors the rich. There is a lot of room for the rich to commit bad deeds but suffer very little through this loophole. On the other hand, populations that are already oppressed can be targeted even further without the same ability to increase their score. For example, if sleeping on the street generates negative points, how will this affect the homeless and their ability to rehabilitate in a system that will deny them services based on their difficult situation?
+\subsection{Conclusion}
+
+In conclusion, if China wants an accurate  and equitable system that will improve the quality of life and moral standing for everyone, this system appears to be very technically infeasible. This system does not provide sufficient benefit for the privacy violations it presents.
+
+
+\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{99}
+
+\bibitem{c1} “The General Office of the State Council on strengthening Guiding Opinions on the Construction of Personal Credit System ,” 发展改革委、统计局就《循环经济发展评价指标体系（2017年版）》答问 $_$ 解读 $_$中国政府网, 23-Dec-2016. [Online]. Available: http://www.gov.cn/zhengce/content/2016-12/30/content$_$5154830.htm. [Accessed: 22-Feb-2019].
+\bibitem{c2} “2018 Edelman Trust Barometer,” 2018 Edelman Trust Barometer. Edelman.
+\bibitem{c3} “Directorate for Public Governance,” Estadísticas - OECD. [Online]. Available: http://www.oecd.org/gov/trust-in-government.htm. [Accessed: 22-Feb-2019].
+\bibitem{c4} “Accountability in Governance .” Worldbank.[Accessed: 22-Feb-2019].
+\bibitem{c5} “标准号:GB/T 35273-2017,” 国家标准|GB 11767-2003, 29-Dec-2017. [Online]. Available: http://www.gb688.cn/bzgk/gb/newGbInfo?hcno=4FFAA51D63BA21B9EE40C51DD3CC40BE. [Accessed: 22-Feb-2019].
+
+\bibitem{c6} “Translation: Xi Jinping's April 20 Speech at the National Cybersecurity and Informatization Work Conference,” New America, 30-Apr-2018. [Online]. Available: https://www.newamerica.org/cybersecurity-initiative/digichina/blog/translation-xi-jinpings-april-20-speech-national-cybersecurity-and-informatization-work-conference/. [Accessed: 22-Feb-2019].
+
+\bibitem{c7} C. Jingchun, “PROTECTING THE RIGHT TO PRIVACY IN CHINA,” Victoria University of Wellington Law review, pp. 645–664.
+
+
+\bibitem{c8}T. Williams, “Can 30,000 Cameras Help Solve Chicago's Crime Problem?,” The New York Times, 26-May-2018. [Online]. Available: https://www.nytimes.com/2018/05/26/us/chicago-police-surveillance.html. [Accessed: 22-Feb-2019].
+
+\bibitem{c9} “What's Wrong With Public Video Surveillance?,” American Civil Liberties Union. [Online]. Available: https://www.aclu.org/other/whats-wrong-public-video-surveillance. [Accessed: 22-Feb-2019].
+
+\bibitem{c10} J. Cook, “Uber's internal charts show how its driver-rating system actually works,” Business Insider, 11-Feb-2015. [Online]. Available: https://www.businessinsider.com/leaked-charts-show-how-ubers-driver-rating-system-works-2015-2. [Accessed: 22-Feb-2019].
+
+\bibitem{c11} “Star ratings,” Driver Requirements | How To Drive With Uber | Uber. [Online]. Available: https://www.uber.com/drive/resources/how-ratings-work/. [Accessed: 22-Feb-2019].
+
+
+\bibitem{c12} A. Filippas, J. J. Horton, and J. M. Golden, “Reputation Inflation∗,” 07-Mar-2018. [Online]. Available: http://john-joseph-horton.com/papers/longrun.pdf. [Accessed: 21-Feb-2019].
+
+\bibitem{c13} D. Crichton and D. Crichton, “China's social credit system won't tell you what you can do right,” TechCrunch, 28-Jan-2019. [Online]. Available: https://techcrunch.com/2019/01/28/china-social-credit/. [Accessed: 22-Feb-2019].
+
+\bibitem{c14} “China’s ‘Social Credit System’ Has Caused More Than Just Public Shaming ,” Vice, HBO, 12-Dec-2018.
+
+
+\bibitem{c15} O. Bedford and K.-K. Hwang, “Guilt and Shame in Chinese Culture: A Cross-cultural Framework from the Perspective of Morality and Identity,” Journal for the Theory of Social Behaviour, vol. 33, no. 2, pp. 127–144, 2003.
+
+\bibitem{c16} E. Handley and B. Xiao, “'Deadbeat map': China opens up social credit scores to social media platform WeChat,” ABC News, 23-Jan-2019. [Online]. Available: https://www.abc.net.au/news/2019-01-24/new-wechat-app-maps-deadbeat-debtors-in-china/10739016. [Accessed: 22-Feb-2019].
+
+\bibitem{c17} T. F. Chan, “Parts of China are using facial recognition technology that can scan the country's entire population in one second,” Business Insider, 26-Mar-2018. [Online]. Available: https://www.businessinsider.com/china-facial-recognition-technology-works-in-one-second-2018-3. [Accessed: 22-Feb-2019].
+
+\bibitem{c18} “Pedestrians who ignore red lights are filmed,” SHANGHAI CHINA, 07-May-2017. [Online]. Available: http://www.shanghai.gov.cn/shanghai/node27118/node27818/node27821/u22ai86744.html. [Accessed: 22-Feb-2019].
+
+
+\bibitem{c19} All Tech Asia, “Face : the company that's looking at your face behind Meitu and Alipay,” medium.com, 15-Feb-2016. [Online]. Available: https://medium.com/act-news/face-the-company-that-s-looking-at-your-face-behind-meitu-and-alipay-ab30c24716b7. [Accessed: 22-Feb-2019].
+
+
+\bibitem{c20} “China plans giant facial recognition database to ID its 1.3bn people,” South China Morning Post, 24-Sep-2018. [Online]. Available: https://www.scmp.com/news/china/society/article/2115094/china-build-giant-facial-recognition-database-identify-any. [Accessed: 22-Feb-2019].
+
+\bibitem{c21}S. Lohr, “Facial Recognition Is Accurate, if You're a White Guy,” The New York Times, 09-Feb-2018. [Online]. Available: https://www.nytimes.com/2018/02/09/technology/facial-recognition-race-artificial-intelligence.html. [Accessed: 22-Feb-2019].
+\bibitem{c22}“China: Big Data Fuels Crackdown in Minority Region,” Human Rights Watch, 06-Mar-2018. [Online]. Available: https://www.hrw.org/news/2018/02/26/china-big-data-fuels-crackdown-minority-region. [Accessed: 22-Feb-2019].
+\bibitem{c23}“China: Free Xinjiang 'Political Education' Detainees,” Human Rights Watch, 19-Sep-2017. [Online]. Available: https://www.hrw.org/news/2017/09/10/china-free-xinjiang-political-education-detainees. [Accessed: 22-Feb-2019].
+
+
+
+\end{thebibliography}
+
+
+
+
+\end{document}
